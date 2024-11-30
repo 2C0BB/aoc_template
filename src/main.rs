@@ -21,16 +21,13 @@ fn main() {
 mod tests {
     use super::*;
 
-    const TEST1_RESULT: &str = "";
-    const TEST2_RESULT: &str = "";
-
     #[test]
     fn test1() {
         let lines: Vec<String> = get_input_lines("inputs/test1.txt");
         
         let result: String = parts::part1(&lines);
 
-        assert_eq!(result, TEST1_RESULT);
+        assert_eq!(result, parts::TEST1_RESULT);
     }
 
     #[test]
@@ -39,6 +36,6 @@ mod tests {
         
         let result: String = parts::part2(&lines);
 
-        assert_eq!(result, TEST2_RESULT);
+        assert_eq!(result, parts::TEST2_RESULT);
     }
 }
