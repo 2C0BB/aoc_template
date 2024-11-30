@@ -3,6 +3,7 @@ mod parts;
 fn get_input_lines(filename: &str) -> Vec<String> {
     let lines: Vec<String> = std::fs::read_to_string(filename)
         .unwrap()
+        .trim()
         .split('\n')
         .map(|l| l.trim().to_string())
         .collect();
